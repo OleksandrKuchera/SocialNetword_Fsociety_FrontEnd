@@ -2,7 +2,7 @@ import logo from '../../../../assets/FS2D2.png'
 import style from './style.module.scss';
 import { Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Message, People, Person } from '@mui/icons-material';
+import { Gamepad, Home, Message, People, Person } from '@mui/icons-material';
 
 
 
@@ -32,6 +32,10 @@ const Sidebar = () => {
                     <Link to="/message" className={pathname === '/message' ? style.activeLink : ''}>
                         <Message />
                         Message
+                    </Link>
+                    <Link to="/message" className={pathname === '/game' ? style.activeLink : ''}>
+                        <Gamepad />
+                        Game
                     </Link>
                 </Nav>
             </div>
