@@ -33,7 +33,7 @@ const Sidebar = () => {
                         <Message />
                         Message
                     </Link>
-                    <Link to="/message" className={pathname === '/game' ? style.activeLink : ''}>
+                    <Link to="/game" className={pathname === '/game' ? style.activeLink : ''}>
                         <Gamepad />
                         Game
                     </Link>

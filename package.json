@@ -16,11 +16,13 @@
         "@mui/material": "^5.15.11",
         "bootstrap": "^5.3.3",
         "css.gg": "^2.1.1",
-        "react": "^18.2.0",
+        "react": "18.2",
         "react-bootstrap": "^2.10.1",
-        "react-dom": "^18.2.0",
+        "react-dom": "18.2",
         "react-input-emoji": "^5.6.6",
-        "react-router-dom": "^6.22.1"
+        "react-router-dom": "^6.22.1",
+        "react-tetris": "^0.4.0",
+        "styled-components": "^6.1.8"
     },
     "devDependencies": {
         "@types/react": "^18.2.55",

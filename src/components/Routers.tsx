@@ -6,6 +6,9 @@ import RegistrationForm from "./_auth/form/RegistrationForm";
 import HomeLayout from "./_root/HomeLayout/HomeLayout";
 import Chat from "./_root/MessageComponents/Chat/Chat";
 import Home from "./_root/HomeLayout/Home/Home";
+import GameList from "./_root/GameList/GameList";
+import GameSnake from "./_root/GameList/SnakeGame/SnakeGame";
+
 
 const AppContainer = () => {
     return (
@@ -15,14 +18,15 @@ const AppContainer = () => {
             }}>
                 <Routes>
                     <Route element={<AuthLayout />}>
-                        <Route path="/sing-in" element={<LoginForm />} />
-                        <Route path="/sing-up" element={<RegistrationForm />} />
+                        <Route path="/login" element={<LoginForm />} />
+                        <Route path="/register" element={<RegistrationForm />} />
                     </Route>
                     <Route element={<HomeLayout />}>
                         <Route path="/message" element={<Chat/>} />
                         <Route path="/home" element={<Home/>} />
-                        <Route path="/game" element={<Home/>} />
-                    </Route>
+                        <Route path="/game" element={<GameList/>}/>
+                        <Route path="/game/snake" element={<GameSnake/>}/>
+\                    </Route>
                 </Routes>
             </main>
         </Router>
