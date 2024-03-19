@@ -27,12 +27,11 @@ const RegistrationForm = () => {
         event.preventDefault();
         try {
             const response = await axios.post('http://127.0.0.1:8000/api/register/', registrationData);
-            console.log(response.data); // Опрацюйте відповідь сервера
-            // Опрацюйте успішну відповідь сервера, наприклад, перенаправлення на іншу сторінку або відображення повідомлення про успішну реєстрацію
+            console.log(response.data);
+        
         } catch (error) {
             console.error('Помилка під час реєстрації:', error);
             setError('Помилка під час реєстрації');
-            // Обробіть помилку, якщо така виникла
         }
     };
 
